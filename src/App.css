@@ -1,38 +1,94 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+
+html,
+html a,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.exp ul {
+  list-style-type: disc; /* memastikan bullet points berbentuk lingkaran */
+  margin-left: 20px; /* memberikan margin untuk tampilan yang rapi */
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo-wrap {
+  font-family: 'Teko', sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+/* button */
+.button-42 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #17bed2, #1298a8);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
   text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s, transform 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-42:hover {
+  box-shadow: rgba(18, 153, 168, 0.457) 0 3px 6px;
+}
+.button-42:active {
+  transform: scale(0.99);
+  background-image: linear-gradient(-180deg, #1298a8, #0b6c78);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-blue {
+  color: #17bed2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#contact {
+  background-color: #f6f6f6;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-brown {
+  background-color: #545454;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill {
+  background-color: #f8f8f8;
+  border: #545454;
+  cursor: pointer;
 }
