@@ -1,4 +1,8 @@
 import React from 'react';
+import { Player } from '@lottiefiles/react-lottie-player';
+import InstagramAnimation from '../lottie/instagram.json';
+import LinkedInAnimation from '../lottie/linkedin.json';
+// import facebookAnimation from '../lottie/facebook.json';
 
 const Home = () => {
   return (
@@ -12,8 +16,8 @@ const Home = () => {
           Galih Wahyu Utomo
         </div>
         <div className="mb-[8%] flex flex-col gap-3">
-          <div className="font-bold text-4xl sm:text-5xl">Front End</div>
-          <div className="font-bold text-4xl sm:text-5xl ml-[10%]">
+          <div className="font-bold text-3xl sm:text-5xl">Front End</div>
+          <div className="font-bold text-3xl sm:text-5xl ml-[10%]">
             Web Developer
           </div>
         </div>
@@ -31,19 +35,33 @@ const Home = () => {
         <img alt="hero" className="w-[70%]" src="/img/hero.png" />
         <div className="flex gap-3 mt-3">
           <a
-            id="linkedin"
-            className="cursor-pointer w-[40%] h-[40%]"
-            href="https://www.linkedin.com/in/galihwahyuutomo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-          <a
             id="instagram"
-            className="cursor-pointer w-[40%] h-[40%]"
+            className="cursor-pointer w-[2rem] h-[2rem] bg-blue rounded"
             href="https://www.instagram.com/galihhh_3/"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            <Player
+              autoplay
+              loop
+              src={InstagramAnimation}
+              className="w-full h-full"
+            />
+          </a>
+          <a
+            id="linkedin"
+            className="cursor-pointer w-[2rem] h-[2rem] bg-blue rounded"
+            href="https://www.linkedin.com/in/galihwahyuutomo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Player
+              autoplay
+              loop
+              src={LinkedInAnimation}
+              className="w-full h-full"
+            />
+          </a>
         </div>
       </div>
     </section>

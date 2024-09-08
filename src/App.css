@@ -62,7 +62,6 @@ body {
   -webkit-user-select: none;
   vertical-align: top;
   white-space: nowrap;
-  z-index: 9;
   border: 0;
   transition: box-shadow 0.2s, transform 0.3s ease;
 }
@@ -77,6 +76,10 @@ body {
 
 .color-blue {
   color: #17bed2;
+}
+
+.bg-blue {
+  background-color: #0e727e;
 }
 
 #contact {

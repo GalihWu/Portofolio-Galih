@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="max-w-[26rem] rounded overflow-hidden shadow-lg">
+    <div className="sm:max-w-[26rem] max-w-[22rem] rounded overflow-hidden shadow-lg">
       <img className="w-full" src={project.image} alt={project.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{project.title}</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -7,21 +8,56 @@ const Footer = () => {
         id="contact"
         className="mt-[3rem] w-full h-[10rem] flex flex-col gap-[3rem] items-center justify-center"
       >
-        <ul className="flex md:gap-[4rem] sm:gap-[3rem] gap-[2rem]">
+        <ul className="flex md:gap-[4rem] sm:gap-[3rem] gap-[0.6rem]">
           <li>
-            <a href="#">Home</a>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Experience
+            </Link>
           </li>
           <li>
-            <a href="#skill">Skill</a>
+            <Link
+              to="skill"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Skill
+            </Link>
           </li>
           <li>
-            <a href="#project">Project</a>
+            <Link
+              to="project"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Project
+            </Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         <div className="flex gap-2 justify-center">

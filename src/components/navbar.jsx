@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,29 +36,59 @@ const Navbar = () => {
         >
           <ul className="flex flex-col md:flex-row md:items-center text-base">
             <li className="p-4 border-b-2 border-[#17bed2] border-opacity-0 hover:border-opacity-100 hover:text-[#17bed2] duration-200 cursor-pointer">
-              <a href="#home" onClick={closeMenu}>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+                onClick={closeMenu}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="p-4 border-b-2 border-[#17bed2] border-opacity-0 hover:border-opacity-100 hover:text-[#17bed2] duration-200 cursor-pointer">
-              <a href="#experience" onClick={closeMenu}>
+              <Link
+                to="experience"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+                onClick={closeMenu}
+              >
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="p-4 border-b-2 border-[#17bed2] border-opacity-0 hover:border-opacity-100 hover:text-[#17bed2] duration-200 cursor-pointer">
-              <a href="#skill" onClick={closeMenu}>
+              <Link
+                to="skill"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+                onClick={closeMenu}
+              >
                 Skill
-              </a>
+              </Link>
             </li>
             <li className="p-4 border-b-2 border-[#17bed2] border-opacity-0 hover:border-opacity-100 hover:text-[#17bed2] duration-200 cursor-pointer">
-              <a href="#project" onClick={closeMenu}>
+              <Link
+                to="project"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+                onClick={closeMenu}
+              >
                 Project
-              </a>
+              </Link>
             </li>
             <li className="p-4 border-b-2 border-[#17bed2] border-opacity-0 hover:border-opacity-100 hover:text-[#17bed2] duration-200 cursor-pointer">
-              <a href="#contact" onClick={closeMenu}>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+                onClick={closeMenu}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -8,21 +8,36 @@ const Skill = () => {
       title: 'Front End',
       img: '/img/ico/fe.png',
       description: 'Detailed description for Front End development.',
+      imgSkill: [
+        '/img/skill/html.png',
+        '/img/skill/css.png',
+        '/img/skill/js.png',
+        '/img/skill/bootstrap.png',
+        '/img/skill/tailwindcss.png',
+        '/img/skill/reactjs.png',
+      ],
     },
     {
       title: 'Back End',
       img: '/img/ico/be.png',
       description: 'Detailed description for Back End development.',
+      imgSkill: [
+        '/img/skill/mongo.png',
+        '/img/skill/mysql.png',
+        '/img/skill/nodejs.png',
+      ],
     },
     {
       title: 'UI UX',
       img: '/img/ico/uiux.png',
       description: 'Detailed description for UI/UX design.',
+      imgSkill: ['/img/skill/figma.png'],
     },
     {
       title: 'Teamwork',
       img: '/img/ico/collab.png',
       description: 'Detailed description for Teamwork.',
+      imgSkill: ['/img/skill/trello.png', '/img/skill/git.png'],
     },
   ];
 
@@ -38,9 +53,9 @@ const Skill = () => {
     <section id="skill" className="flex flex-col gap-[3rem] mx-[12%] mt-[5rem]">
       <div className="flex gap-3 flex-col text-center justify-center items-center">
         <div className="text-3xl font-semibold">Skill</div>
-        <p className="md:w-[70%]">
-          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-          lectus netus in. Aliquet donec morbi convallis pretium
+        <p className="md:text-base text-sm md:w-[70%]">
+          Here are the key skills I have mastered, covering various aspects of
+          web development and team collaboration.
         </p>
       </div>
       <div className="flex flex-wrap gap-[1rem]">
@@ -76,15 +91,20 @@ const Skill = () => {
             >
               ✕
             </button>
-            <img
-              src={selectedSkill.img}
-              alt={selectedSkill.title}
-              className="w-16 h-16 mx-auto"
-            />
-            <h2 className="text-2xl font-semibold text-center my-4">
+            <h2 className="text-2xl font-semibold text-center">
               {selectedSkill.title}
             </h2>
-            <p className="text-center">{selectedSkill.description}</p>
+            <p className="text-center">I have mastered tools such as..</p>
+            <div className="flex gap-4 flex-wrap mt-[2rem] justify-center">
+              {selectedSkill.imgSkill.map((img, i) => (
+                <div
+                  className="sm:w-[5rem] w-[4rem] border border-black flex items-center p-2 rounded-lg drop-shadow"
+                  key={i}
+                >
+                  <img src={img} alt={i + 1} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
